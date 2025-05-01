@@ -1,0 +1,429 @@
+/* Override bg-primary (not used for Hero background) */
+.bg-primary {
+    background-color: #f4f4f4 !important;
+  }
+  
+  /* Tranzit color scheme (aligned with tailwind.config.js) */
+  .text-primary {
+    color: #0f766e !important; /* Darker elegant green for hover, accents */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-secondary {
+    color: #0066cc !important; /* Tech blue for links */
+  }
+  
+  .bg-tranzitGradient {
+    background: linear-gradient(135deg, #0f766e 0%, #0066cc 100%);
+  }
+  
+  .bg-tranzitBlack {
+    background-color: #1a1a1a !important; /* CTA */
+  }
+  
+  .bg-tranzitGreen {
+    background-color: #0f766e !important; /* GetStarted ring, button hover */
+  }
+  
+  .bg-tranzitBlue {
+    background-color: #0066cc !important; /* CTA, DriverNetwork, DeliveryService button */
+  }
+  
+  /* Gradient overlays for Hero image */
+  .green__gradient {
+    background: radial-gradient(circle, rgba(15, 118, 110, 0.4), transparent);
+  }
+  
+  .blue__gradient {
+    background: radial-gradient(circle, rgba(0, 102, 204, 0.4), transparent);
+    filter: blur(123px);
+  }
+  
+  /* Tranzit-specific classes */
+  .text-white {
+    color: #fff !important; /* CTA, Footer, discount banner */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-dimWhite {
+    color: rgba(255, 255, 255, 0.7) !important; /* Footer secondary text */
+  }
+  
+  /* Remove bright gradients from globals.css */
+  .text-gradient {
+    color: #000000 !important; /* Black for Hero, Stats */
+  }
+  
+  /* Gradient backgrounds */
+  .bg-blue-gradient {
+    background: linear-gradient(135deg, #0f766e, #0066cc);
+  }
+  
+  .bg-black-gradient {
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.2), rgba(0, 102, 204, 0.2)) !important;
+  }
+  
+  .bg-black-gradient-2 {
+    background: linear-gradient(to right, #0f766e, #0066cc) !important;
+  }
+  
+  .bg-gray-gradient {
+    background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #0f766e 95.11%);
+  }
+  
+  .bg-discount-gradient {
+    background: linear-gradient(125.17deg, rgba(15, 118, 110, 0.2), rgba(0, 102, 204, 0.2));
+  }
+  
+  .pink__gradient {
+    background: radial-gradient(circle, rgba(15, 118, 110, 0.4), transparent);
+    filter: blur(900px);
+  }
+  
+  .white__gradient {
+    background: radial-gradient(circle, rgba(0, 102, 204, 0.2), transparent);
+    filter: blur(750px);
+  }
+  
+  /* Hero-specific styles */
+  .hero {
+    background-color: #f4f4f4 !important;
+  }
+  
+  .hero h1,
+  .hero h2,
+  .hero h3,
+  .hero h4,
+  .hero h5,
+  .hero h6,
+  .hero p,
+  .hero span {
+    color: #000000 !important;
+    text-shadow: none;
+  }
+  
+  /* Discount banner styles */
+  .discount-banner {
+    background-color: #000000 !important;
+    transition: background-color 0.3s ease;
+  }
+  
+  .discount-banner:hover {
+    background-color: #0f766e !important;
+  }
+  
+  .discount-banner p,
+  .discount-banner span {
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* CTA-specific styles */
+  .cta {
+    background-color: #1a1a1a !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .cta h2,
+  .cta p,
+  .cta span {
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* CTA button styles */
+  .cta-button {
+    background-color: #0066cc !important;
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 16px 24px !important;
+    border-radius: 10px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #0f766e !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(15, 118, 110, 0.5);
+  }
+  
+  /* DriverNetwork-specific styles */
+  .driver-network {
+    background-color: #f4f4f4 !important;
+  }
+  
+  .driver-network h2,
+  .driver-network p,
+  .driver-network span {
+    color: #000000 !important;
+    text-shadow: none;
+  }
+  
+  .driver-network button {
+    background-color: #0066cc !important;
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 16px 24px !important;
+    border-radius: 10px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .driver-network button:hover {
+    background-color: #0f766e !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(15, 118, 110, 0.5);
+  }
+  
+  /* DeliveryService-specific styles */
+  .delivery-service {
+    background-color: #f4f4f4 !important;
+  }
+  
+  .delivery-service h2,
+  .delivery-service p,
+  .delivery-service h4,
+  .delivery-service span {
+    color: #000000 !important;
+    text-shadow: none;
+  }
+  
+  .delivery-service button {
+    background-color: #0066cc !important;
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 16px 24px !important;
+    border-radius: 10px !important;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .delivery-service button:hover {
+    background-color: #0f766e !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(15, 118, 110, 0.5);
+  }
+  
+  /* BookingProcess-specific styles */
+  .booking-process {
+    background-color: #f4f4f4 !important;
+  }
+  
+  .booking-process h2,
+  .booking-process p {
+    color: #000000 !important;
+    text-shadow: none;
+  }
+  
+  .booking-process .app-store-badge {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .booking-process .app-store-badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(15, 118, 110, 0.5);
+  }
+  
+  /* Testimonials-specific styles */
+  .testimonials {
+    background-color: #f4f4f4 !important;
+  }
+  
+  .testimonials h1,
+  .testimonials p,
+  .testimonials h4,
+  .testimonials span {
+    color: #000000 !important;
+    text-shadow: none;
+  }
+  
+  /* Feedback card styles */
+  .feedback-card {
+    background-color: #fff !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-card h4,
+  .feedback-card p,
+  .feedback-card span {
+    color: #000000 !important;
+    text-shadow: none;
+  }
+  
+  .feedback-card:hover {
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.2), rgba(0, 102, 204, 0.2));
+    box-shadow: 0 6px 12px rgba(15, 118, 110, 0.3);
+  }
+  
+  /* Stats-specific styles */
+  .stats {
+    background-color: #ffffff !important;
+  }
+  
+  .stats h4,
+  .stats p {
+    color: #000000 !important;
+    text-shadow: none;
+  }
+  
+  /* Footer-specific styles */
+  .footer {
+    background-color: #000000 !important;
+    border-radius: 16px !important;
+    padding: 24px 24px !important;
+    margin: 16px auto !important;
+    max-width: 1200px !important;
+  }
+  
+  .footer h4,
+  .footer p,
+  .footer li,
+  .footer span {
+    color: #fff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .footer a {
+    color: #fff !important;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #e6f0ff !important;
+  }
+  
+  .footer .footer-content {
+    max-width: 100% !important;
+    padding: 0 16px;
+  }
+  
+  /* GetStarted-specific styles (for Hero) */
+  .get-started {
+    background-color: #0f766e !important;
+    padding: 2px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .get-started:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(15, 118, 110, 0.5);
+  }
+  
+  .get-started-inner {
+    background-color: #ffffff !important;
+  }
+  
+  .get-started p,
+  .get-started span {
+    color: #000000 !important;
+    text-shadow: none;
+  }
+  
+  .get-started img {
+    filter: brightness(0) invert(0.3) sepia(1) hue-rotate(140deg) saturate(5);
+  }
+  
+  /* Global text styles (for other components) */
+  h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+    text-shadow: none;
+  }
+  
+  p, li, span {
+    color: #000000 !important;
+  }
+  
+  a {
+    color: #0066cc !important;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0f766e !important;
+  }
+  
+  /* Button and link transitions */
+  button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button:not(.bg-tranzitGradient) {
+    color: #0066cc !important;
+  }
+  
+  /* Feature card hover effect */
+  .feature-card:hover {
+    background: linear-gradient(135deg, rgba(15, 118, 110, 0.2), rgba(0, 102, 204, 0.2));
+    box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  }
+  
+  /* Clients section logo hover effect */
+  .clients-logo:hover {
+    box-shadow: 0 4px 8px rgba(15, 118, 110, 0.3);
+  }
+  
+  /* GetStarted button hover effect (fallback) */
+  .bg-tranzitGradient:hover {
+    box-shadow: 0 0 10px 2px #0f766e;
+  }
+  
+  /* Navbar specific styles */
+  .navbar a {
+    color: #0066cc !important;
+  }
+  
+  .navbar a:hover {
+    color: #0f766e !important;
+  }
+  
+  .sidebar {
+    background-color: #fff !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sidebar li {
+    color: #000000 !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+  
+    h2 {
+      font-size: 2rem !important;
+    }
+  
+    p {
+      font-size: 1rem !important;
+    }
+  
+    .footer {
+      padding: 16px !important;
+      margin: 8px auto !important;
+    }
+  
+    .get-started {
+      width: 120px !important;
+      height: 120px !important;
+    }
+  
+    .cta-button,
+    .driver-network button,
+    .delivery-service button {
+      padding: 12px 20px !important;
+      font-size: 16px !important;
+    }
+  }
